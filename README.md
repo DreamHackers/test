@@ -24,5 +24,16 @@ test
 * メモリ開放→マジで死ぬやつ
 * 再起→これも死ぬやつ
 * 境界値テスト
-* 
-
+ 
+## Gitフロー（1～3名）
+* developで開発する
+* リリースのタイミングでmasterにマージ
+* 緊急的なのは、hotfixで対応する
+ 
+## 開発環境
+* OS => Linux or Mac
+* Java => 1.7
+* Gradle => 2.1
+* Android Studio => 0.8.6
+* Android OS => 4.4
+* GenyMotion(実機ないなら)
