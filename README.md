@@ -30,6 +30,21 @@
 * master => リリース用ブランチ
 * hotfix => 緊急用ブランチ
  
+### 実際の開発スタイル
+
+```
+# 自分のリポジトリを本体と同じ最新版にしたい時
+# まず、本体のソースをローカルにpullして、それをoriginにpush
+# 変更点があれば、developへpull requestをする（masterにしてはいけない）
+
+$ git clone git@github.com:{自分のアカウント名}/test.git
+$ git cd test
+$ git checkout develop
+$ git remote add upstream git@github.com:NativeAppDevelopmentInstitute/test.git
+$ git pull upstream develop
+$ git push origin develop
+```
+ 
 ## 開発環境
 * OS => Linux or Mac
 * Java => 1.7
