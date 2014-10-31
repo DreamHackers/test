@@ -4,24 +4,25 @@ import java.util.Map;
 public class CallByReference {
 
     public static void main(String[] args) {
-        System.out.println(111111);
+        System.out.println(1111112);
         fxxk1();
     }
 
     private static void fxxk1() {
         Map<Integer, String> fxxk = new HashMap<Integer, String>(2);
         fxxk.put(0, "素晴らしい格納");
-        fxxk(fxxk);
+        Map<Integer, String> viewMap = fxxk();
         int i = 0;
-        while (i < fxxk.size()) {
-            System.out.println(fxxk.get(i));
+        while (i < viewMap.size()) {
+            System.out.println(viewMap.get(i));
+        	System.out.println("foo");
             i++;
         }
     }
 
-    public static void fxxk(Map<Integer, String> map) {
+    private static Map<Integer, String> fxxk() {
+        Map<Integer, String> map = new Map<Integer, String>();
         map.put(0, "fxxk格納");
         map.put(1, "fxxk2格納");
+        return map;
     }
-
-}
