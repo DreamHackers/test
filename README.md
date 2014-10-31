@@ -44,6 +44,10 @@ $ git remote add upstream git@github.com:NativeAppDevelopmentInstitute/test.git
 $ git pull upstream develop
 $ git push origin develop
 ```
+upstream => 本体リポジトリのこと
+origin => 自分のリモートにあるリポジトリのこと
+develop/master => 各リポジトリのブランチのこと
+
  
 ## 開発環境
 * OS => Linux or Mac
