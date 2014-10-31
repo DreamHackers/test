@@ -26,9 +26,9 @@ test
 * 境界値テスト
  
 ## Gitフロー（1～3名）
-* developで開発する
-* リリースのタイミングでmasterにマージ
-* 緊急的なのは、hotfixで対応する
+* develop => 開発用ブランチ
+* master => リリース用ブランチ
+* hotfix => 緊急用ブランチ
  
 ## 開発環境
 * OS => Linux or Mac
