@@ -11,16 +11,15 @@ public class CallByReference.java {
     private static void fxxk1() {
         Map<Integer, String> fxxk = new HashMap<Integer, String>(2);
         fxxk.put(0, "素晴らしい格納");
-        Map<Integer, String> viewMap = fxxk();
+        fxxk(fxxk);
         int i = 0;
-        while (i < viewMap.size()) {
-            System.out.println(viewMap.get(i));
+        while (i < fxxk.size()) {
+            System.out.println(fxxk.get(i));
             i++;
         }
     }
 
-    private static Map<Integer, String> fxxk() {
-        Map<Integer, String> map = new Map<Integer, String>();
+    public static void fxxk(Map<Integer, String> map) {
         map.put(0, "fxxk格納");
         map.put(1, "fxxk2格納");
     }
