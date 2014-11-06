@@ -10,6 +10,12 @@ Android Appの開発ルールまとめ
 * gradle 2.1
 * Android Studio
 
+### SDK類
+* SDK Platform Android 4.4W.2, API 20, revision 2
+* Android SDK Build-tools, revision 20
+* Android SDK Platform-tools, revision 21
+* Android SDK Tools, revision 23.0.5
+
 ### mac only
 * JavaForOSX
 
